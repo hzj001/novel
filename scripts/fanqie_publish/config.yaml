@@ -1,0 +1,25 @@
+# 番茄小说自动发布配置
+# 请根据你的作家后台链接修改下方 book_id
+
+# 作家作品发布页（新建章节）
+# 格式: https://fanqienovel.com/main/writer/{writer_id}/publish/{book_id}?enter_from=newchapter
+writer_id: "7650920070733892670"
+book_id: "7651092222896505406"
+
+# 章节 Markdown 目录（相对本仓库根目录）
+chapters_dir: "novels/雨夜来电/chapters"
+
+# 登录状态保存文件（运行 login.py 后生成，勿提交到 Git）
+state_file: "scripts/fanqie_publish/state.json"
+
+# 已发布记录（用于断点续发，勿删）
+published_log: "scripts/fanqie_publish/published_log.json"
+
+# 每章发布间隔（秒），避免过快触发风控
+delay_between_chapters: 8
+
+# 正文字数同步等待超时（秒）
+word_count_timeout: 20
+
+# 默认模式: draft=只存草稿, publish=尝试正式发布
+default_mode: "draft"
