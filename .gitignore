@@ -20,4 +20,4 @@ local.properties
 
 # 番茄发布脚本本地会话（勿提交）
 scripts/fanqie_publish/state.json
-scripts/fanqie_publish/published_log.json
+scripts/fanqie_publish/published_log.json__pycache__/
